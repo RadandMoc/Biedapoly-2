@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Biedapoly.png" />
+    <None Remove="plansza.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Biedapoly\Biedapoly.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Biedapoly.png" />
+    <Resource Include="plansza.png" />
+  </ItemGroup>
+
+</Project>

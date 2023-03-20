@@ -1,0 +1,49 @@
+﻿<Window x:Class="FinalVersion.PrePlayersGenerator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalVersion"
+        mc:Ignorable="d"
+        Title="PrePlayersGenerator" Height="710" Width="800" Closing="Window_Closing">
+    <Grid>
+        <StackPanel x:Name="spFirst" VerticalAlignment="Top" Orientation="Horizontal">
+            <Label Content="       "/>
+            <StackPanel x:Name="spSecond" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Label Content="       "/>
+                <Label                      Height="40"  Width="450" Content="Write players nicks"/>
+                <TextBox x:Name="txtNick0"  Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick0_TextChanged"/>
+                <TextBox x:Name="txtNick1"  Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick1_TextChanged"/>
+                <TextBox x:Name="txtNick2"  Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick2_TextChanged"/>
+                <TextBox x:Name="txtNick3"  Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick3_TextChanged"/>
+                <TextBox x:Name="txtNick4"  Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick4_TextChanged"/>
+                <TextBox x:Name="txtNick5"  Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick5_TextChanged"/>
+                <TextBox x:Name="txtNick6"  Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick6_TextChanged"/>
+                <TextBox x:Name="txtNick7"  Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick7_TextChanged"/>
+                <TextBox x:Name="txtNick8"  Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick8_TextChanged"/>
+                <TextBox x:Name="txtNick9"  Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick9_TextChanged"/>
+                <TextBox x:Name="txtNick10" Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick10_TextChanged"/>
+                <TextBox x:Name="txtNick11" Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick11_TextChanged"/>
+                <TextBox x:Name="txtNick12" Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick12_TextChanged"/>
+                <TextBox x:Name="txtNick13" Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick13_TextChanged"/>
+                <TextBox x:Name="txtNick14" Height="40"  Width="450" TextWrapping="Wrap" Text="" BorderBrush="Black" TextChanged="txtNick14_TextChanged"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <StackPanel VerticalAlignment="Center">
+                <Label Content="       "/>
+                <Label Content="       "/>
+                <Button  x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Height="85" VerticalAlignment="Top" Width="186" Click="btnNext_Click"/>
+                <Label Content="       "/>
+                <Label Content="       "/>
+                <Label Content="       "/>
+                <Button  x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Height="85" VerticalAlignment="Top" Width="186" Click="btnBack_Click"/>
+                <Label Content="       "/>
+                <Label Content="       "/>
+                <CheckBox x:Name="cBox" Content="Do you want limit play time?" FontSize="14"/>
+            </StackPanel>
+            <Label Content="      "/>
+        </StackPanel>
+
+    </Grid>
+</Window>

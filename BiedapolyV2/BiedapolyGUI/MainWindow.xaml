@@ -1,0 +1,175 @@
+﻿<Window x:Name="mainWindow"
+    x:Class="BiedapolyGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BiedapolyGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920"
+        WindowState="Maximized"
+        WindowStyle="None">
+    <Grid x:Name="my_grid" RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.0"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Image x:Name="Biedapoly_Copy" HorizontalAlignment="Left" Height="895" VerticalAlignment="Top" Width="885" Source="/plansza.png" RenderTransformOrigin="0.5,0.5" Margin="5,-11,0,0">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Canvas x:Name="GUIInfoPanel" HorizontalAlignment="Left" Height="600" Margin="871,0,0,0" VerticalAlignment="Top" Width="694">
+            <Canvas x:Name="CanvasPlayerone" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="309" Canvas.Left="10" Canvas.Top="10">
+                <Label x:Name="PlayerName" Content="Label" Height="60" Width="74" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Image x:Name="PlayerImage" Height="60" Canvas.Left="74" Width="60"/>
+                <Label x:Name="ActualPosition" Content="Label" Height="30" Canvas.Left="134" Width="110" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label x:Name="CurrentPosition" Content="Label" Height="30" Canvas.Left="134" Canvas.Top="30" Width="110"/>
+                <Label x:Name="Pocket" Content="Label" Height="60" Canvas.Left="239" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <ListBox x:Name="Player1propertyfield" Height="120" Canvas.Top="60" Width="309" HorizontalAlignment="Center" VerticalAlignment="Top">
+                </ListBox>
+                <Rectangle Height="60" Stroke="Black" Width="74"/>
+                <Rectangle Height="60" Stroke="Black" Width="60" HorizontalAlignment="Left" Canvas.Left="74" VerticalAlignment="Center"/>
+                <Rectangle Height="30" Canvas.Left="134" Stroke="Black" Width="105" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Rectangle Height="30" Canvas.Left="134" Stroke="Black" Width="105" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="30"/>
+                <Rectangle Height="60" Stroke="Black" Width="70" Canvas.Left="239" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+            </Canvas>
+
+
+
+
+
+
+            <Canvas x:Name="CanvasPlayertwo" HorizontalAlignment="Left" Height="180" VerticalAlignment="Center" Width="309" Canvas.Left="354" Canvas.Top="10">
+                <Label x:Name="Player2Name" Content="Label" Height="60" Width="74" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Image x:Name="Player2Image" Height="60" Canvas.Left="74" Width="60"/>
+                <Label x:Name="ActualPosition2" Content="Label" Height="30" Canvas.Left="134" Width="110" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label x:Name="CurrentPosition2" Content="Label" Height="30" Canvas.Left="134" Canvas.Top="30" Width="110"/>
+                <Label x:Name="Pocket2" Content="Label" Height="60" Canvas.Left="239" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <ListBox x:Name="Player2propertyfield" Height="120" Canvas.Top="60" Width="309"   HorizontalAlignment="Center" VerticalAlignment="Top">
+                </ListBox>
+                <Rectangle Height="60" Stroke="Black" Width="74"/>
+                <Rectangle Height="60" Stroke="Black" Width="60" HorizontalAlignment="Left" Canvas.Left="74" VerticalAlignment="Center"/>
+                <Rectangle Height="30" Canvas.Left="134" Stroke="Black" Width="105" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Rectangle Height="30" Canvas.Left="134" Stroke="Black" Width="105" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="30"/>
+                <Rectangle Height="60" Stroke="Black" Width="70" Canvas.Left="239" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+            </Canvas>
+
+
+
+            <Canvas x:Name="CanvasPlayerthree" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="309" Canvas.Left="10" Canvas.Top="208">
+                <Label x:Name="Player3Name" Content="Label" Height="60" Width="74" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Image x:Name="Player3Image" Height="60" Canvas.Left="74" Width="60"/>
+                <Label x:Name="ActualPosition3" Content="Label" Height="30" Canvas.Left="134" Width="110" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label x:Name="CurrentPosition3" Content="Label" Height="30" Canvas.Left="134" Canvas.Top="30" Width="110"/>
+                <Label x:Name="Pocket3" Content="Label" Height="60" Canvas.Left="239" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <ListBox x:Name="Player3propertyfield" Height="120" Canvas.Top="60" Width="309"   HorizontalAlignment="Center" VerticalAlignment="Top">
+                </ListBox>
+                <Rectangle Height="60" Stroke="Black" Width="74"/>
+                <Rectangle Height="60" Stroke="Black" Width="60" HorizontalAlignment="Left" Canvas.Left="74" VerticalAlignment="Center"/>
+                <Rectangle Height="30" Canvas.Left="134" Stroke="Black" Width="105" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Rectangle Height="30" Canvas.Left="134" Stroke="Black" Width="105" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="30"/>
+                <Rectangle Height="60" Stroke="Black" Width="70" Canvas.Left="239" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+            </Canvas>
+
+            <Canvas x:Name="CanvasPlayer5" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="309" Canvas.Left="10" Canvas.Top="408">
+                <Label x:Name="Player5Name" Content="Label" Height="60" Width="74" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Image x:Name="Player5Image" Height="60" Canvas.Left="74" Width="60"/>
+                <Label x:Name="ActualPosition5" Content="Label" Height="30" Canvas.Left="134" Width="110" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label x:Name="CurrentPosition5" Content="Label" Height="30" Canvas.Left="134" Canvas.Top="30" Width="110"/>
+                <Label x:Name="Pocket5" Content="Label" Height="60" Canvas.Left="239" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <ListBox x:Name="Player5propertyfield" Height="120" Canvas.Top="60" Width="309"   HorizontalAlignment="Center" VerticalAlignment="Top">
+                </ListBox>
+                <Rectangle Height="60" Stroke="Black" Width="74"/>
+                <Rectangle Height="60" Stroke="Black" Width="60" HorizontalAlignment="Left" Canvas.Left="74" VerticalAlignment="Center"/>
+                <Rectangle Height="30" Canvas.Left="134" Stroke="Black" Width="105" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Rectangle Height="30" Canvas.Left="134" Stroke="Black" Width="105" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="30"/>
+                <Rectangle Height="60" Stroke="Black" Width="70" Canvas.Left="239" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+            </Canvas>
+
+
+
+
+
+
+            <Canvas x:Name="CanvasPlayer4" HorizontalAlignment="Center" Height="180" VerticalAlignment="Top" Width="309" Canvas.Left="354" Canvas.Top="208">
+                <Label x:Name="Player4Name" Content="Label" Height="60" Width="74" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Image x:Name="Player4Image" Height="60" Canvas.Left="74" Width="60"/>
+                <Label x:Name="ActualPosition4" Content="Label" Height="30" Canvas.Left="134" Width="110" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label x:Name="CurrentPosition4" Content="Label" Height="30" Canvas.Left="134" Canvas.Top="30" Width="110"/>
+                <Label x:Name="Pocket4" Content="Label" Height="60" Canvas.Left="239" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <ListBox x:Name="Player4propertyfield" Height="120" Canvas.Top="60" Width="309" HorizontalAlignment="Center" VerticalAlignment="Top">
+                </ListBox>
+                <Rectangle Height="60" Stroke="Black" Width="74"/>
+                <Rectangle Height="60" Stroke="Black" Width="60" HorizontalAlignment="Left" Canvas.Left="74" VerticalAlignment="Center"/>
+                <Rectangle Height="30" Canvas.Left="134" Stroke="Black" Width="105" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Rectangle Height="30" Canvas.Left="134" Stroke="Black" Width="105" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="30"/>
+                <Rectangle Height="60" Stroke="Black" Width="70" Canvas.Left="239" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+            </Canvas>
+
+
+            <Canvas x:Name="CanvasPlayer6" HorizontalAlignment="Center" Height="180" VerticalAlignment="Top" Width="309" Canvas.Left="354" Canvas.Top="408">
+                <Label x:Name="Player6Name" Content="Label" Height="60" Width="74" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Image x:Name="Player6Image" Height="60" Canvas.Left="74" Width="60"/>
+                <Label x:Name="ActualPosition6" Content="Label" Height="30" Canvas.Left="134" Width="110" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label x:Name="CurrentPosition6" Content="Label" Height="30" Canvas.Left="134" Canvas.Top="30" Width="110"/>
+                <Label x:Name="Pocket6" Content="Label" Height="60" Canvas.Left="239" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <ListBox x:Name="Player6propertyfield" Height="120" Canvas.Top="60" Width="309"   HorizontalAlignment="Center" VerticalAlignment="Top">
+                </ListBox>
+                <Rectangle Height="60" Stroke="Black" Width="74"/>
+                <Rectangle Height="60" Stroke="Black" Width="60" HorizontalAlignment="Left" Canvas.Left="74" VerticalAlignment="Center"/>
+                <Rectangle Height="30" Canvas.Left="134" Stroke="Black" Width="105" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Rectangle Height="30" Canvas.Left="134" Stroke="Black" Width="105" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="30"/>
+                <Rectangle Height="60" Stroke="Black" Width="70" Canvas.Left="239" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+            </Canvas>
+
+
+
+        </Canvas>
+
+        <Button x:Name="Wyjście" Content="Wyjście" HorizontalAlignment="Left" Height="120" Margin="1391,685,0,0" VerticalAlignment="Top" Width="120" Click="Wyjście_Click" />
+        <Button x:Name="Dice_Roll" Content="Button" HorizontalAlignment="Left" Height="120" Margin="920,540,0,0" VerticalAlignment="Top" Width="120" Click="Dice_Roll_Click" />
+
+        <Image x:Name="firstDice" HorizontalAlignment="Left" Height="50" Margin="520,685,0,0" VerticalAlignment="Top" Width="50"/>
+        <Image x:Name="secondDice" Height="50" Margin="620,685,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50"/>
+        <ListBox x:Name="ListBoxWithAction" HorizontalAlignment="Left" Height="535" Margin="113,120,0,0" VerticalAlignment="Top" Width="620">
+        </ListBox>
+        <Button x:Name="Save_Game" Content="Zapisz Grę" HorizontalAlignment="Left" Height="120" Margin="1233,685,0,0" VerticalAlignment="Top" Width="120" />
+        <Button x:Name="Load_Game" Content="Wczytaj Grę" HorizontalAlignment="Left" Height="120" Margin="1080,685,0,0" VerticalAlignment="Top" Width="120" />
+        <Button x:Name="New_Game" Content="Nowa Gra" HorizontalAlignment="Left" Height="120" Margin="927,685,0,0" VerticalAlignment="Top" Width="120" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>
